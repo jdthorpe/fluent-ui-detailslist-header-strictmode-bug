@@ -43,11 +43,14 @@ root.render(
   <div>
 
     <h1>No Strict Mode</h1>
+    <p>Dragging to re-size the columns works when strict-mode is <em>not</em> applied</p>
     <App />
     <h1>Strict Mode Applied</h1>
+    <p>Dragging to re-size the columns no longer works when using the react-dev server when strict-mode <em>is</em> applied</p>
     <React.StrictMode>
       <App />
     </React.StrictMode>
+    <p>Note that CodePen uses babel to create a production build, so this bug is not reproducible on CodePen.</p>
   </div>
 );
 
